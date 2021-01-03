@@ -1,0 +1,33 @@
+ul {
+  
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  li {
+
+
+  }
+  
+ ul li a {
+    transition: 0.3s background ease-out, 0.3s color ease-out ;
+    display: block;
+    color: white  ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    color: black  ;
+    background-color: whitesmoke;
+  }
+  .active{
+    color : black;
+      background-color: white;
+  }
