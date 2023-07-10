@@ -1,0 +1,152 @@
+/*ul {*/
+
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    overflow: hidden;*/
+/*    background-color: black;*/
+/*}*/
+
+/*.logo {*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    font: 16px;*/
+/*    padding: 14px 16px;*/
+/*}*/
+
+/*.mobile-menu-icon {*/
+/*    color: white;*/
+/*    display: none;*/
+/*}*/
+
+/*@media screen and (max-width: 992px) {*/
+/*    ul {*/
+/*        flex-direction: column;*/
+/*    }*/
+
+/*    ul .menu  {*/
+/*        height: 0;*/
+/*        flex-direction: column;*/
+/*    }*/
+
+/*    .mobile-menu-icon {*/
+/*        display: block;*/
+/*    }*/
+/*}*/
+
+/*ul div {*/
+
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    overflow: hidden;*/
+/*    background-color: black;*/
+/*}*/
+
+
+/*ul li a {*/
+/*    transition: 0.3s background ease-out, 0.3s color ease-out;*/
+/*    display: block;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    padding: 14px 16px;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*ul li a:hover {*/
+/*    color: black;*/
+/*    background-color: whitesmoke;*/
+/*}*/
+
+/*.active {*/
+/*    color: black;*/
+/*    background-color: white;*/
+/*}*/
+
+
+
+body {
+    margin: 0;
+
+}
+.nav {
+    box-sizing: border-box;
+    padding: 0.6em;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.nav > .nav-header {
+    flex: 0.95;
+    text-align: left;
+    padding-left: 1rem;
+}
+.nav > .nav-header > .nav-title {
+    font-size: 22px;
+    color: #fff;
+}
+.nav > .nav-list {
+    display: flex;
+    gap: 2rem;
+}
+.nav > .nav-list > li {
+    list-style-type: none;
+}
+.nav > .nav-list > li a {
+    text-decoration: none;
+    color: #efefef;
+    cursor: pointer;
+}
+.nav > #nav-check {
+    display: none;
+}
+@media (max-width: 480px) {
+    .nav {
+        padding: 1rem;
+    }
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 0.2rem;
+    }
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav > .nav-list {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background-color: black;
+        height: 0;
+        transition: all 0.3s ease-in;
+        top: 57px;
+        left: 0;
+        overflow: hidden;
+        z-index: 10000
+    }
+    .nav > .nav-list > li {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .nav > #nav-check:checked ~ .nav-list {
+        height: calc(100vh - 50px);
+    }
+}
