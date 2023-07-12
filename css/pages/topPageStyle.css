@@ -22,6 +22,15 @@ ol li {
 
 .top-m-title{
     margin: 1em;
+
+}
+
+.top-m-title a {
+    text-decoration: none;
+    color: black;
+}
+.top-m-title a:hover {
+    text-decoration: underline;
 }
 
 .top-m-content-holder{
@@ -41,6 +50,13 @@ ol li {
     grid-area: image;
     object-fit: cover;
     border-radius: 15px;
+
+}
+@media (max-width: 480px)  {
+    .top-m-image{
+        width: 100%;
+
+    }
 }
 .top-m-content{
     grid-area: cont;

@@ -67,7 +67,10 @@
 /*    background-color: white;*/
 /*}*/
 
-
+.nav-title a{
+    text-decoration: none;
+    color: white;
+}
 
 body {
     margin: 0;
